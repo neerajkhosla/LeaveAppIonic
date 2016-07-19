@@ -1,0 +1,52 @@
+<!--<ion-view class=" " style="background-color: rgb(255, 255, 255);" id="page3" title="Login" hide-nav-bar="true">
+    <ion-content padding="true" class="manual-ios-statusbar-padding">
+        <div style="width: 300px; height: 71px;" class="spacer"></div>
+        <div class="">
+            <img style="display: block; margin-left: auto; margin-right: auto;" src="img/v3AON7Y9Qs6dCnL65UQi_login-page-logo.png" height="auto" width="201">
+        </div>
+        <form class="list " id="login-form1" novalidate="novalidate" on-valid-submit="login()">
+            <div style="width: 300px; height: 55px;" class="spacer"></div>
+            <ion-list class=" " id="login-list4">
+                <label id="login-input1" class="item item-input item-floating-label sm-font validated">
+                    <input placeholder="Username" type="email" name="email" ng-model="data.username" required>
+                    <i class="icon ion-alert-circled error"></i>
+                </label>
+
+                <label id="login-input2" class="item item-input item-floating-label sm-font validated">
+                    <input placeholder="Password" type="password" name="password" ng-model="data.password" required>
+                    <i class="icon ion-alert-circled error"></i>
+                </label>
+
+            </ion-list>
+            <div style="height: 40px;" class="spacer"></div>
+            <button id="login-button10" class="button button-positive  button-block " type="submit">Login</button>
+        </form>
+        <a class=" button button-positive button-small button-block button-clear forget_link" id="login-button29" ui-sref="forgetPassword">Forget Password</a>
+    </ion-content>
+</ion-view>-->
+<ion-view class=" " style="background-color: rgb(255, 255, 255);" id="page3" title="Login" hide-nav-bar="true">
+    <ion-content padding="true" class="manual-ios-statusbar-padding">
+        <div style="width: 300px; height: 71px;" class="spacer"></div>
+        <div class="">
+            <img style="display: block; margin-left: auto; margin-right: auto;" src="img/v3AON7Y9Qs6dCnL65UQi_login-page-logo.png" height="auto" width="201">
+        </div>
+        <form class="list " id="login-form1" novalidate="novalidate">
+            <div style="width: 300px; height: 41px;" class="spacer"></div>
+            <ion-list class=" " id="login-list4">
+                <label id="login-input1" class="item item-input item-floating-label sm-font">
+                    <span class="input-label">Username</span>
+                    <input placeholder="Username" type="email" name="email" ng-model="data.username">
+                    <!--<i class="icon ion-alert-circled error"></i>-->
+                </label>
+                <label id="login-input2" class="item item-input item-floating-label sm-font">
+                    <span class="input-label">Password</span>
+                    <input placeholder="Password" type="password" name="password" ng-model="data.password">
+                    <!--<i class="icon ion-alert-circled error"></i>-->
+                </label>
+            </ion-list>
+            <div style="height: 40px;" class="spacer"></div>
+            <button id="login-button10" class="button button-positive  button-block " type="submit" ng-click="login()">Login</button>
+        </form>
+        <a class="button button-positive button-small button-block button-clear forget_link" id="login-button29" ng-click="forget()">Forget Password</a>
+    </ion-content>
+</ion-view>

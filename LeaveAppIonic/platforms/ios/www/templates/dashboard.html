@@ -1,0 +1,52 @@
+<ion-view style="" class=" " id="page1" title="Dashboard" hide-back-button="true">
+    <ion-content class="has-header" padding="true" style="background: url(img/J1FeAil4RY2juoSurHE7_blue_wallpaper_mobile.jpg) no-repeat center;background-size:cover;">
+        <ion-list class=" " id="dashboard-list6" ng-controller="dashboardCtrl">
+           
+            <ion-item style="" ui-sref="applyLeave" id="dashboard-list-item68" class="item-icon-left item-icon-right dark  remaining icon-blue">
+                <i class="icon ion-android-clipboard"></i>Remaining {{remaining}}
+                <i class="icon ion-ios-arrow-right"></i>
+            </ion-item>           
+           
+            <ion-item style="" ui-sref="used" id="dashboard-list-item69" class="item-icon-left item-icon-right dark  icon-green">
+                <i class="icon ion-android-checkbox-outline"></i>Used {{used}}
+                <i class="icon ion-ios-arrow-right"></i>
+            </ion-item>     
+
+            <ion-item style="" ui-sref="pendingLeave" id="dashboard-list-item70" class="item-icon-left item-icon-right dark  icon-yellow">
+                <i class="icon ion-android-refresh"></i>Pending {{pending}}
+                <i class="icon ion-ios-arrow-right"></i>
+            </ion-item>
+
+            <ion-item style="" ui-sref="requestShortLeave" id="dashboard-list-item71" class="item-icon-left item-icon-right dark  icon-blue">
+                <i class="icon ion-ios-speedometer"></i>I Am Running Late
+                <i class="icon ion-ios-arrow-right"></i>
+            </ion-item>
+
+            <ion-item style="" ui-sref="history" id="dashboard-list-item72" class="item-icon-left item-icon-right dark  icon-blue">
+                <i class="icon ion-pie-graph"></i>History
+                <i class="icon ion-ios-arrow-right"></i>
+            </ion-item>
+            <ion-item style="" ui-sref="rejectlist" id="dashboard-list-item72" class="item-icon-left item-icon-right dark  icon-red">
+                <i class="icon ion-pie-graph"></i>Reject List
+                <i class="icon ion-ios-arrow-right"></i>
+            </ion-item>
+            <ion-item style="" ng-click="editUser()" ui-sref="EditUser" id="dashboard-list-item73" class="item-icon-left item-icon-right dark  icon-green">
+                <i class="icon ion-edit"></i>Edit Profile
+                <i class="icon ion-ios-arrow-right"></i>
+            </ion-item>
+            <ion-item style="" ng-if="role=='admin' || role=='approver'" ui-sref="approveDetails" id="dashboard-list-item73" class="item-icon-left item-icon-right dark  icon-green">
+                <i class="icon ion-android-checkmark-circle"></i>Approval Requests
+                <i class="icon ion-ios-arrow-right"></i>
+            </ion-item>
+
+            <!--<ion-item style="" ui-sref="createNewUser" id="dashboard-list-item74" class="item-icon-left item-icon-right dark  icon-blue">
+                <i class="icon ion-android-contacts"></i>Create New User
+                <i class="icon ion-ios-arrow-right"></i>
+            </ion-item>-->
+            <ion-item style="" ui-sref="login" id="dashboard-list-item75" class="item-icon-left item-icon-right dark  icon-red">
+                <i class="icon ion-log-in"></i>Logout
+                <i class="icon ion-ios-arrow-right"></i>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

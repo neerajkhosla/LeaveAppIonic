@@ -1,0 +1,55 @@
+<!--<ion-view style="" class=" " id="page13" title="Edit User">
+    <ion-content class="has-header" padding="true" ng-controller="EditUserCtrl">
+        
+        <form class="list " id="createNewUser-form10">
+            <label id="createNewUser-input7" class="item item-input ">
+                <input placeholder="Employee First Name" type="text" readonly="readonly" ng-true-value="{{Name}}">
+            </label>
+            
+            <label id="createNewUser-input16" class="item item-input ">
+                <input placeholder="Contact Number" type="tel">
+            </label>
+            <label id="createNewUser-input17" class="item item-input ">
+                <input placeholder="Alternate Number" type="tel">
+            </label>
+            <label id="createNewUser-select11" class="item item-select upper-form">
+                <span class="input-label">State</span>
+                <select>
+                    <option>Punjab</option>
+                    <option>Haryana</option>
+                    <option>Gujrat</option>
+                    <option>J &amp; K</option>
+                </select>
+            </label>
+            <label id="createNewUser-input18" class="item item-input ">
+                <input placeholder="City" type="text">
+            </label>
+            <label id="createNewUser-input23" class="item item-input ">
+                <input placeholder="Address" type="text">
+            </label>
+            <a class=" button button-positive  button-block " id="createNewUser-button38" ui-sref="dashboard">Update</a>
+            <a class=" button button-positive  button-block " id="createNewUser-button39" ui-sref="dashboard">Cancel</a>
+        </form>
+    </ion-content>
+</ion-view>-->
+<ion-view style="" class=" " id="page13" title="Edit Profile">
+    <ion-content class="has-header" padding="true" ng-controller="EditUserCtrl">
+        <ion-list class=" " id="editProfile-list7">
+            <ion-item style="" id="editProfile-list-item87" class="item-avatar  ">
+                <img src="{{Url}}">
+                <h2 ng-model="data.UserName">{{UserName}}</h2>
+                <p ng-model="data.Dept">{{Dept}}</p>
+            </ion-item>
+            <label id="editProfile-input24" class="item item-input item-floating-label ">
+                <span class="input-label">Phone Number</span>
+                <input placeholder="Phone Number" type="tel" ng-model="data.Phone">
+            </label>
+            <label id="editProfile-input25" class="item item-input item-floating-label ">
+                <span class="input-label">Address</span>
+                <input placeholder="Address" type="text" ng-model="data.Address">
+            </label>
+        </ion-list>
+        <button class=" button button-positive button-block " id="editProfile-button40" ng-click="Update()">Update</button>
+        <button class=" button button-positive button-block " id="editProfile-button41" ui-sref="dashboard">Cancel</button>
+    </ion-content>
+</ion-view>

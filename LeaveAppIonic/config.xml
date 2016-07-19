@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<widget id="com.ionicframework.ionicblankapp" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.ionicframework.leaveapp" version="0.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>LeaveApp</name>
   <description>Manage Leave</description>
   <author email="you@example.com" href="http://example.com.com/">LeaveApp</author>
@@ -18,11 +18,9 @@
   <preference name="InAppBrowserStorageEnabled" value="True" />
   <preference name="SuppressesIncrementalRendering" value="True" />
   <preference name="windows-target-version" value="10.0" />
-   <platform name="android">
-      
-        <icon src="resources/android/icon/iconTest.png"/>
-       
-    </platform>
+  <platform name="android">
+    <icon src="resources/android/icon/iconTest.png" />
+  </platform>
   <plugin name="cordova-plugin-device" spec="~1.1.1" />
   <plugin name="cordova-plugin-console" spec="~1.0.2" />
   <plugin name="cordova-plugin-whitelist" spec="~1.2.1" />

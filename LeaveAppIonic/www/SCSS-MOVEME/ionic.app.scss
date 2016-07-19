@@ -1,0 +1,104 @@
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+@import "../www/lib/ionic/scss";
+.myClass {
+	background-color: inherit!important;
+	border: none!important;
+}
+
+.buttontest {
+	width: 45%!important;
+}
+
+.button: hover {
+	background-color: #2a6ee3;
+}
+
+.forget_link: hover {
+	color: #3A7FF5;
+}
+
+.ds_button .fa {
+	font-size: 15px;
+	line-height: normal;
+	margin-left: 15px;
+}
+
+.ds_button {
+	line-height: 46px;
+}
+
+.pull-right {
+	position: relative !important;
+}
+
+.pull-right span {
+	color: #333;
+	position: absolute !important;
+	right: 12px !important;
+	top: 18px !important;
+}
+
+.upper-form .input-label {
+	color: #444;
+	display: block;
+	font-size: 16px;
+	margin-top: -6px;
+	max-width: 100%;
+	padding: 0 10px 2px 0;
+	width: 100%;
+}
+
+.upper-form.item-select: : after {
+	margin-top: 7px;
+}
+
+.upper-form select {
+	-moz-appearance: none;
+	background: #fff none repeat scroll 0 0;
+	border-radius: 2px;
+	bottom: 0;
+	color: #333;
+	cursor: pointer;
+	font-size: 14px;
+	margin: 5px 0 0 -6px;
+	max-width: 100%;
+	padding: 3px;
+	position: relative;
+	right: 0;
+	text-indent: 0.01px;
+	text-overflow: "";
+	top: auto;
+	white-space: nowrap;
+	width: 100%;
+	direction: ltr;
+}
+
+.icon-blue i {
+	color: #0c60ee;
+}
+
+.icon-red i {
+	color: #e42112;
+}
+
+.icon-blue i {
+	color: #0c60ee;
+}
+
+.icon-green i {
+	color: #28a54c;
+}
+
+.icon-yellow i {
+	color: #e6b500;
+}
+
+.sm-font span {
+	font-size: 14px;
+	padding: 4px 0 0 !important;
+}
+
+.sm-font input {
+	height: 26px;
+}
+

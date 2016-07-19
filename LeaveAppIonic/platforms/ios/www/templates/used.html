@@ -1,0 +1,57 @@
+<ion-view style="" class=" " id="page15" title="Used">
+    <ion-content class="has-header" padding="true" ng-controller="usedCtrl">
+        <ion-list class=" " id="history-list17">
+            <ion-item style="" ng-if="detailes.length===0" id="history-list-item47" class="">
+
+                <p>No Record Found!</p>
+
+            </ion-item>
+            </ion-list>
+            <ion-list class=" " id="history-list17" ng-repeat="detail in detailes">
+                <ion-item style="" ng-click="getdetail(detail._id)" ui-sref="leaveDetails" id="history-list-item47" class="item-avatar calm listing">
+                    <h2calm>
+                        <p><b>Duration:</b></p>
+                        <p>{{detail.leavefromdate|date:'MM/dd/yyyy'}} <b>To:</b> {{detail.leavetodate|date:'MM/dd/yyyy'}}</p>
+                        <p><b>Leave Type:</b></p>
+                        <p>{{detail.leavetype}}</p>
+                        <p><b>Approved by:</b></p>
+                        <p>{{detail.approvername}}</p>
+                        <p><b>Applied on:</b></p>
+                        <p>{{detail.requestdate|date:'MM/dd/yyyy'}}</p>
+                    </h2calm>
+                </ion-item>
+                <!--<ion-item style="" ui-sref="leaveDetails" id="history-list-item48" class="item-avatar calm  ">
+            <h2calm>
+                Mon 4/21 to Tue 4/22
+                <p style="white-space:normal;">Casual Leave</p>
+                <p style="white-space:normal;">Approved by : <span>Neeraj Khosla</span></p>
+                <p style="white-space:normal;">Applied on : <span>27-Jan, Mon</span></p>
+            </h2calm>
+        </ion-item>
+        <ion-item style="" ui-sref="leaveDetails" id="history-list-item49" class="item-avatar calm  ">
+            <h2calm>
+                Mon 4/21 to Tue 4/22
+                <p style="white-space:normal;">Casual Leave</p>
+                <p style="white-space:normal;">Approved by : <span>Neeraj Khosla</span></p>
+                <p style="white-space:normal;">Applied on : <span>27-Jan, Mon</span></p>
+            </h2calm>
+        </ion-item>
+        <ion-item style="" ui-sref="leaveDetails" id="history-list-item50" class="item-avatar calm  ">
+            <h2calm>
+                Mon 4/21 to Tue 4/22
+                <p style="white-space:normal;">Casual Leave</p>
+                <p style="white-space:normal;">Approved by : <span>Neeraj Khosla</span></p>
+                <p style="white-space:normal;">Applied on : <span>27-Jan, Mon</span></p>
+            </h2calm>
+        </ion-item>
+        <ion-item style="" ui-sref="leaveDetails" id="history-list-item51" class="item-avatar calm  ">
+            <h2calm>
+                Mon 4/21 to Tue 4/22
+                <p style="white-space:normal;">Casual Leave</p>
+                <p style="white-space:normal;">Approved by : <span>Neeraj Khosla</span></p>
+                <p style="white-space:normal;">Applied on : <span>27-Jan, Mon</span></p>
+            </h2calm>
+        </ion-item>-->
+            </ion-list>
+    </ion-content>
+</ion-view>

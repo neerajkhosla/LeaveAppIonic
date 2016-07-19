@@ -1,0 +1,53 @@
+<ion-view style="" class=" " id="page7" title="Apply Leave" ng-controller="applyLeaveCtrl">
+    <ion-content class="has-header" padding="true">
+        <form class="list " id="applyLeave-form5">
+            <label id="applyLeave-select3" class="item item-select upper-form">
+                <span class="input-label">Leave Type</span>
+                <select ng-model="data.selectedleavetype">
+                    <option value="1">Sick Leave</option>
+                    <option value="2">Casual Leave</option>
+                </select>
+            </label>
+            <label id="applyLeave-select4" class="item item-select upper-form">
+                <span class="input-label">Leave duration</span>
+                <select ng-model="data.selectedLeaveDuration">
+                    <option value="1">Full Day</option>
+                    <option value="2">Half Day</option>
+                    <option value="3">Short Leave</option>
+                </select>
+            </label>
+            <label id="applyLeave-input10" class="item item-input item-stacked-label ">
+                <span class="input-label">From Date</span>
+                <input placeholder="Date" type="date" ng-model="data.FromDate" value=Date()>
+            </label>
+            <label id="applyLeave-input21" class="item item-input ">
+                <input placeholder="Time" type="time" ng-model="data.FromTime">
+            </label>
+            <label id="applyLeave-input11" class="item item-input item-stacked-label ">
+                <span class="input-label">To Date</span>
+                <input placeholder="Date" type="date" ng-model="data.ToDate" value=data.FromDate>
+            </label>
+            <label name="Time" id="applyLeave-input22" class="item item-input ">
+                <input placeholder="Time" type="time" ng-model="data.ToTime">
+            </label>
+            <label id="applyLeave-input12" class="item item-input item-stacked-label ">
+                <span class="input-label">Reason</span>
+                <input placeholder="" type="text" ng-model="data.Reason">
+            </label>
+            <label id="applyLeave-input13" class="item item-input item-stacked-label ">
+                <span class="input-label">Contact Number</span>
+                <input placeholder="" type="number" ng-model="data.PhoneNo" require ng-pattern="/^\d{0,9}(\.\d{1,9})?$/">
+            </label>
+            <label id="applyLeave-select5" class="item item-select upper-form">
+                <span class="input-label">Approved by</span>
+                <select ng-model="data.selectedPerson" placeholder="Select the Person">
+                    <option ng-repeat="x in lists" value="{{x._id}}">{{x.firstname}} {{x.lastname}}</option>
+                </select>
+            </label>
+            <ion-item style="" id="applyLeave-list-item57" class="item-icon-left  ">
+                <i class="icon ion-android-attach"></i><input type="file" multiple="multiple" placeholder="Attachment"/></ion-item>
+            <button class=" button button-positive  button-block " id="applyLeave-button14" ng-click="apply()" type="submit">Submit</button>
+            <a class=" button button-positive  button-block " id="applyLeave-button15" ui-sref="dashboard">Cancel</a>
+        </form>
+    </ion-content>
+</ion-view>
