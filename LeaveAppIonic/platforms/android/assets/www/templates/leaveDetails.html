@@ -1,0 +1,51 @@
+<ion-view class=" " style="background-color: rgb(221, 221, 221);" id="page4" title="Leave Details">
+    <ion-content class="has-header" padding="true" ng-controller="leaveDetailsCtrl">       
+            <div style="width: 283px; height: 7px;" class="spacer"></div>
+            <ion-item style="" id="leaveDetails-list-item79" class="positive  pull-right">
+                Leave applied on
+                <span class="item-note">{{applieddate|date:'MM/dd/yyyy'}}</span>
+            </ion-item>
+            <ion-item style="" id="leaveDetails-list-item81" class="positive  pull-right">
+                From
+                <span class="item-note">{{fromdate|date:'MM/dd/yyyy'}}</span>
+            </ion-item>
+            <ion-item style="" id="leaveDetails-list-item82" class="positive  pull-right">
+                To
+                <span class="item-note">{{todate|date:'MM/dd/yyyy'}}</span>
+            </ion-item>
+            <ion-item style="" id="leaveDetails-list-item83" class="positive  pull-right">
+                Leave Type
+                <span class="item-note">{{LeaveType}}</span>
+            </ion-item>
+            <ion-item style="" id="leaveDetails-list-item84" class="positive  pull-right">
+                Approved By
+                <span class="item-note">Mr/Mrs {{approvername}}</span>
+            </ion-item>
+            <ion-item style="" id="leaveDetails-list-item29" class="item-icon-right positive  pull-right">
+                Status
+                <span class="item-note">{{statusofleave}}</span>
+            </ion-item>
+            <ion-item style="" ng-if="comments.length===0" id="leaveDetails-list-item58" class="item-avatar positive  ">
+                <h2positive ng-repeat="comment in comments">
+                    <div class="positive">
+                        <p style="white-space:normal;">{{comment.commentby}}</p>
+                        <p style="white-space:normal;">{{comment.commenton}}</p>
+                        <p style="white-space:normal;">{{comment.comment}}</p>
+                    </div>
+                </h2positive>
+            </ion-item>
+            <!--<ion-item style="" id="leaveDetails-list-item59" class="item-avatar positive  ">
+            <h2positive>Neeraj(4/21)
+                <p style="white-space:normal;">Reason is here. Reason is here. Reason is here. Reason is here. Reason is here. Reason is here. Reason is here. Reason is here.</p>
+            </h2positive>
+        </ion-item>
+        <ion-item style="" id="leaveDetails-list-item60" class="item-avatar positive  ">
+            <h2positive>Neeraj(4/21)
+                <p style="white-space:normal;">Reason is here. Reason is here. Reason is here. Reason is here. Reason is here. Reason is here. Reason is here. Reason is here.</p>
+            </h2positive>
+        </ion-item>-->
+        <a class=" button button-positive button-block " id="leaveDetails-button24" ng-click="CancelLeave()">Cancel Leave</a>
+            <a class=" button button-positive button-block " id="leaveDetails-button24" ng-click="Dashboard()">Back</a>
+
+</ion-content>
+</ion-view>

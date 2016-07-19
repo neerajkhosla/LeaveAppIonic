@@ -1,0 +1,25 @@
+<ion-view style="" class="" id="page18" title="Reject List">
+    <ion-content class="has-header" padding="true" ng-controller="rejectlistCtrl">
+        <ion-list class="" id="history-list17">
+            <ion-item style="" ng-if="detailes.length===0" id="history-list-item47" class="">
+                <p>No Record Found!</p>
+            </ion-item>
+            </ion-list>
+            <ion-list class="" id="history-list17" ng-repeat="detail in detailes">
+                <ion-item style="" ng-click="ReApply(detail._id,detail.approverid,detail.approverdevice_token)" ui-sref="reApply" id="history-list-item47" class="item-avatar calm listing">
+                    <h2calm>
+                        <p><b>Duration:</b></p>
+                        <p>{{detail.leavefromdate|date:'MM/dd/yyyy'}} <b>To:</b> {{detail.leavetodate|date:'MM/dd/yyyy'}}</p>
+                        <p><b>Leave Type:</b></p>
+                        <p>{{detail.leavetype}}</p>
+                        <p><b>Approved by:</b></p>
+                        <p>{{detail.approvername}}</p>
+                        <p><b>Applied on:</b></p>
+                        <p>{{detail.requestdate|date:'MM/dd/yyyy'}}</p>
+                        <p><b>Reason:</b></p>
+                        <p>{{detail.reason}}</p>
+                    </h2calm>
+                </ion-item>               
+            </ion-list>
+    </ion-content>
+</ion-view>

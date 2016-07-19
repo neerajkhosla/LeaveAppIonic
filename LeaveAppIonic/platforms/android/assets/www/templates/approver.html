@@ -1,0 +1,36 @@
+<ion-view style="" class=" " id="page8" title="Approver">
+    <ion-content class="has-header" padding="true" ng-controller="approverCtrl">
+        <form class="list " id="approver-form6" on-valid-submit="aprrove()">
+            <ion-item style="" id="approver-list-item31" class="positive  pull-right">Employee Id
+                <span class="item-note">{{Employeeid}}</span>
+            </ion-item>
+            <ion-item style="" id="approver-list-item32" class="positive  pull-right">Employee Name
+                <span class="item-note">{{Username}}</span>
+            </ion-item>
+            <ion-item style="" id="approver-list-item33" class="positive  pull-right">Department
+                <span class="item-note">{{Department}}</span>
+            </ion-item>
+            <ion-item style="" id="approver-list-item34" class="positive  pull-right">Date of joining
+                <span class="item-note">{{Fromdate|date:'MM/dd/yyyy'}}</span>
+            </ion-item>
+            <ion-item style="" id="approver-list-item35" class="positive  pull-right">Leave applied on
+                <span class="item-note">{{Todate|date:'MM/dd/yyyy'}}</span>
+            </ion-item>
+            <ion-item style="" id="approver-list-item36" class="positive  pull-right">Leave applied period
+                <span class="item-note">{{Duration}}</span>
+            </ion-item>
+            <!--<ion-item style="" id="approver-list-item37" class="positive  pull-right">Number of leaves
+                <span class="item-note">3</span>
+            </ion-item>-->
+            <ion-item style="" id="approver-list-item38" class="positive  pull-right">Leave type
+                <span class="item-note">{{LeaveType}}</span>
+            </ion-item>
+            <ion-item style="" id="approver-list-item39" class="positive  pull-right">Reason
+                <span class="item-note">{{Reason}}</span>
+            </ion-item>
+            <button class=" button button-positive  button-block " id="approver-button16" ng-click="aprrove()" ui-sref="dashboard" type="submit">Approve</button>
+            <a class=" button button-positive  button-block " id="approver-button17" ng-click="rejectrequest()" ui-sref="reject">Reject with reason</a>
+            <a class=" button button-positive  button-block " id="approver-button18" ng-click="forword()" ui-sref="forward">Forward</a>
+        </form>
+    </ion-content>
+</ion-view>

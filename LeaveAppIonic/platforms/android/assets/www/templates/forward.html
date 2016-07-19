@@ -1,0 +1,20 @@
+<ion-view style="" class=" " id="page11" title="Forward" ng-controller="forwardCtrl">
+    <ion-content class="has-header" padding="true">
+        <form class="list " id="forward-form9">
+            <label id="forward-select8" class="item item-select upper-form" >
+                <span class="input-label">Approved by</span>
+                <!--<select ng-model="data.selectedPerson" placeholder="Select the Person">
+                    <option ng-repeat="x in lists" value="{{x._id}}">{{x.firstname}} {{x.lastname}}</option>                   
+                </select>-->
+                <select ng-model="data.selectedPerson"
+                        ng-options="x as x.firstname for x in lists"></select>
+
+            </label>
+            
+            <label id="forward-input20" class="item item-input ">
+                <input placeholder="Enter a valid reason" type="text" ng-model="data.reason">
+            </label>
+        </form>
+        <a class=" button button-positive  button-block " id="forward-button23" ng-click="forward()" ui-sref="dashboard">Forward</a>
+    </ion-content>
+</ion-view>
